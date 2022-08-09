@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280.212" height="70.158" viewBox="0 0 280.212 70.158">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2b519b"/>
+      <stop offset="0.59" stop-color="#a3d7f8"/>
+      <stop offset="1" stop-color="#2e5da3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="0.5" y1="1" x2="0.5" y2="0" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-9" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2b519b"/>
+      <stop offset="0.14" stop-color="#2e5da3"/>
+      <stop offset="0.4" stop-color="#387fbb"/>
+      <stop offset="0.75" stop-color="#48b6e1"/>
+      <stop offset="1" stop-color="#55e1ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient-9"/>
+  </defs>
+  <g id="Nexsusoneロゴ横" transform="translate(-44.85 -24.276)">
+    <g id="_レイヤー_1" transform="translate(119.483 45.585)">
+      <g id="グループ_1489" data-name="グループ 1489">
+        <path id="パス_755" data-name="パス 755" d="M237.238,84.149v4.523H220.8v4.954a4.518,4.518,0,0,0,4.514,4.514h7.4v4.514h-7.4a9.031,9.031,0,0,1-9.029-9.029V84.157h16.434v-.009a4.518,4.518,0,0,0-4.514-4.514H216.29V75.12h11.919a9.028,9.028,0,0,1,9.029,9.029Z" transform="translate(-216.29 -75.111)" fill="url(#linear-gradient)"/>
+        <path id="パス_756" data-name="パス 756" d="M285.363,88.869l7.853,13.769H288l-5.237-9.207-5.259,9.207H272.29l7.853-13.769L272.29,75.1h5.215l5.259,9.207L288,75.1h5.215Z" transform="translate(-247.912 -75.1)" fill="url(#linear-gradient-2)"/>
+        <path id="パス_757" data-name="パス 757" d="M334.189,83.13a3.5,3.5,0,0,0,3.5,3.5h4.924a8.012,8.012,0,0,1,0,16.024H329.67V98.14h12.938a3.5,3.5,0,1,0,0-7h-4.924a8.012,8.012,0,0,1,0-16.024h12.938v4.514H337.684A3.5,3.5,0,0,0,334.189,83.13Z" transform="translate(-280.312 -75.111)" fill="url(#linear-gradient-3)"/>
+        <path id="パス_758" data-name="パス 758" d="M412.378,75.12V93.626a9.031,9.031,0,0,1-9.029,9.029h-2.891a9.031,9.031,0,0,1-9.029-9.029V75.12h4.514V93.626a4.518,4.518,0,0,0,4.514,4.514h2.891a4.518,4.518,0,0,0,4.514-4.514V75.12Z" transform="translate(-315.187 -75.111)" fill="url(#linear-gradient)"/>
+        <path id="パス_759" data-name="パス 759" d="M457.689,83.13a3.5,3.5,0,0,0,3.5,3.5h4.924a8.012,8.012,0,0,1,0,16.024H453.17V98.14h12.938a3.5,3.5,0,1,0,0-7h-4.924a8.012,8.012,0,0,1,0-16.024h12.938v4.514H461.184A3.5,3.5,0,0,0,457.689,83.13Z" transform="translate(-350.049 -75.111)" fill="url(#linear-gradient-3)"/>
+        <path id="パス_760" data-name="パス 760" d="M535.248,84.149v9.477a9.031,9.031,0,0,1-9.029,9.029h-2.891a9.031,9.031,0,0,1-9.029-9.029V84.149a9.031,9.031,0,0,1,9.029-9.029h2.891a9.028,9.028,0,0,1,9.029,9.029Zm-4.514,0a4.518,4.518,0,0,0-4.514-4.514h-2.891a4.518,4.518,0,0,0-4.514,4.514v9.477a4.518,4.518,0,0,0,4.514,4.514h2.891a4.518,4.518,0,0,0,4.514-4.514Z" transform="translate(-384.568 -75.111)" fill="url(#linear-gradient)"/>
+        <path id="パス_761" data-name="パス 761" d="M598.118,84.143v18.5H593.6V84.139a4.518,4.518,0,0,0-4.514-4.514H586.2a4.518,4.518,0,0,0-4.514,4.514v18.506H577.17V84.139A9.031,9.031,0,0,1,586.2,75.11h2.891a9.028,9.028,0,0,1,9.029,9.029Z" transform="translate(-420.069 -75.106)" fill="url(#linear-gradient-7)"/>
+        <path id="パス_762" data-name="パス 762" d="M661.358,84.149v4.523H644.924v4.954a4.518,4.518,0,0,0,4.514,4.514h7.4v4.514h-7.4a9.031,9.031,0,0,1-9.029-9.029V84.157h16.434v-.009a4.518,4.518,0,0,0-4.514-4.514H640.41V75.12h11.919a9.028,9.028,0,0,1,9.029,9.029Z" transform="translate(-455.779 -75.111)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="_編集モード" transform="translate(44.85 22.832)">
+      <g id="グループ_1491" data-name="グループ 1491" transform="translate(0 1.445)">
+        <g id="グループ_1490" data-name="グループ 1490">
+          <path id="パス_763" data-name="パス 763" d="M116.23,60.293V41.513h4.614L105.481,26.15,90.11,41.521Z" transform="translate(-70.407 -26.15)" fill="url(#linear-gradient-9)"/>
+          <path id="パス_764" data-name="パス 764" d="M64.492,73.027l30.865,22.2v5.664L115,81.246,95.357,61.6V89.444L64.492,67.268V61.6L44.85,81.246l19.642,19.646Z" transform="translate(-44.85 -46.168)" fill="url(#linear-gradient-10)"/>
+          <path id="パス_765" data-name="パス 765" d="M94.75,108.83v18.8H90.14L105.5,142.995l15.393-15.389Z" transform="translate(-70.424 -72.837)" fill="url(#linear-gradient-10)"/>
+        </g>
+        <rect id="長方形_1183" data-name="長方形 1183" width="39.685" height="39.685" transform="translate(7.011 35.081) rotate(-45)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.22"/>
+      </g>
+    </g>
+  </g>
+</svg>
