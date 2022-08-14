@@ -63,6 +63,12 @@ a {
   border-right: .3rem solid white;
 }
 
+.aboutLink:hover::before{
+  border-right: .4rem solid #2B519B;
+  border-bottom: .4rem solid #2B519B;
+  transition: all .3s ease-in-out;
+}
+
 p{
   font-size: 1.8rem;
   font-weight: bold;

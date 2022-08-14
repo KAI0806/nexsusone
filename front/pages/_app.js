@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
               _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>採用情報</Link>
           </NextLink>
 
-          <NextLink href='/' passHref>
+          <NextLink href='/company' passHref>
             <Link fontSize='2rem' mr='6rem' transition='all .2s ease-in-out' 
               _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>会社情報</Link>
           </NextLink>
@@ -61,8 +61,8 @@ function MyApp({ Component, pageProps }) {
             <EntryButton txt='エントリーはこちら'/>
           </Flex>
 
-          <Flex w='56.25%' pt='4.8rem' pl='3.2rem' justify='space-between' align='flex-start'>
-            <Box width='42%'>
+          <Flex w='58%' pt='4.8rem' pl='3.2rem' justify='space-between' align='flex-start'>
+            <Box width='36%'>
               <Center as='h3' w='28rem' color='white'fontSize='1.8rem' mb='4.8rem' p='.5rem' background='#A9A9A9'>最新求人</Center>
 
               <NextLink href='/' passHref>
@@ -115,13 +115,13 @@ function MyApp({ Component, pageProps }) {
                       _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>採用情報</Link>
                 </NextLink>
 
-                <NextLink href='/' passHref>
+                <NextLink href='/company' passHref>
                   <Link fontSize='1.8rem' mr='6.4rem' transition='all .2s ease-in-out'
                       _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>会社情報</Link>
                 </NextLink>
 
                 <NextLink href='/' passHref>
-                  <Link fontSize='1.8rem' mr='6.4rem' transition='all .2s ease-in-out'
+                  <Link fontSize='1.8rem' transition='all .2s ease-in-out'
                       _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>お問い合わせ</Link>
                 </NextLink>
               </Flex>
