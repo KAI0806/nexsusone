@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
               _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>HOME</Link>
           </NextLink>
           
-          <NextLink href='/' passHref>
+          <NextLink href='/recruit' passHref>
             <Link fontSize='2rem' mr='6rem' transition='all .2s ease-in-out'
               _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>採用情報</Link>
           </NextLink>
@@ -115,7 +115,7 @@ function MyApp({ Component, pageProps }) {
                       _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>HOME</Link>
                 </NextLink>
 
-                <NextLink href='/' passHref>
+                <NextLink href='/recruit' passHref>
                   <Link fontSize='1.8rem' mr='6.4rem' transition='all .2s ease-in-out'
                       _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>採用情報</Link>
                 </NextLink>

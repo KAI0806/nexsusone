@@ -76,7 +76,7 @@ export default function Service() {
                 <Flex id='service02' w='66.66%' m='0 auto' pt='17.6rem' direction='row-reverse'>
                     <Center flexDirection='column' w='50%' h='34rem' background='url(/service/service02_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                         _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
-                        <Image src='/service/service02.svg' alt='SES事業'/>
+                        <Image src='/service/service02.svg' alt='SES事業' w='8.8rem'/>
                         <Heading as='h3' fontSize='3.8rem' color='white' mt='1.6rem'>SES事業</Heading>
                     </Center>
 
@@ -96,7 +96,7 @@ export default function Service() {
                 <Flex id='service03' w='66.66%' m='0 auto 14.7rem' pt='17.6rem'>
                     <Center flexDirection='column' w='50%' h='34rem' background='url(/service/service03_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                         _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
-                        <Image src='/service/service03.svg' alt='クリエイター育成'/>
+                        <Image src='/service/service03.svg' alt='クリエイター育成' w='8.8rem'/>
                         <Heading as='h3' fontSize='3.8rem' color='white' mt='1.6rem'>クリエイター育成</Heading>
                     </Center>
 
