@@ -74,7 +74,7 @@ export default function Recruit() {
                         </Text>
                     </Flex>
 
-                    <Accordion defaultIndex={[0]} allowToggle mb='7.2rem'>
+                    <Accordion allowToggle mb='7.2rem'>
                         <AccordionItem borderTop='solid .2rem #2B519B' borderBottom='solid .2rem #2B519B'>
                             <Heading as='h4'>
                                 <AccordionButton border='none' background='#E2FAFF'>
@@ -302,7 +302,7 @@ export default function Recruit() {
                         </Text>
                     </Flex>
 
-                    <Accordion defaultIndex={[0]} allowToggle mb='7.2rem'>
+                    <Accordion allowToggle mb='7.2rem'>
                         <AccordionItem borderTop='solid .2rem #2B519B' borderBottom='solid .2rem #2B519B'>
                             <Heading as='h4'>
                                 <AccordionButton border='none' background='#E2FAFF'>

@@ -57,7 +57,7 @@ export default function Home() {
             </Heading>
 
             <Box>
-              <NextLink href='/recruit'  passHref>
+              <NextLink href='/recruit#recruit01'  passHref>
                 <Link w='100%' h='15rem' mb='1.6rem' display='flex' justifyContent='flex-start' alignItems='stretch' boxShadow='0 .3rem .6rem rgba(0, 0, 0, 16%)'
                   _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
                   <Center w='22.5%' color='white' fontSize='2rem' background='url(/top/job_bg.jpg) no-repeat center center/cover'>
@@ -75,7 +75,7 @@ export default function Home() {
                 </Link>
               </NextLink>
 
-              <NextLink href='/recruit'  passHref>
+              <NextLink href='/recruit#recruit02'  passHref>
                 <Link w='100%' h='15rem' mb='1.6rem' display='flex' justifyContent='flex-start' alignItems='stretch' boxShadow='0 .3rem .6rem rgba(0, 0, 0, 16%)'
                   _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
                   <Center w='22.5%' color='white' fontSize='2rem' background='url(/top/job_bg.jpg) no-repeat center center/cover'>

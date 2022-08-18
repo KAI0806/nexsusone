@@ -70,7 +70,7 @@ function MyApp({ Component, pageProps }) {
             <Box width='36%'>
               <Center as='h3' w='28rem' color='white'fontSize='1.8rem' mb='4.8rem' p='.5rem' background='#A9A9A9'>最新求人</Center>
 
-              <NextLink href='/recruit' passHref>
+              <NextLink href='/recruit#recruit01' passHref>
                 <Link
                   display='block' fontSize='1.8rem' pl='.5rem' pb='.95rem' mb='4.2rem' borderBottom='.1rem solid #707070' position='relative' transition='all .2s ease-in-out'
                   _before={{position: 'absolute', content: '""', width: '.6rem', height: '.6rem', borderRight: '.25rem solid #2B519B', borderBottom: '.25rem solid #2B519B', top: '50%', right: '0', transform: 'translate(-50%, -50%) rotateZ(-45deg)' }}
@@ -78,7 +78,7 @@ function MyApp({ Component, pageProps }) {
                   Webクリエイター
                 </Link>
               </NextLink>
-              <NextLink href='/recruit' passHref>
+              <NextLink href='/recruit#recruit02' passHref>
                 <Link 
                   display='block' fontSize='1.8rem' pl='.5rem' pb='.95rem' mb='4.2rem' borderBottom='.1rem solid #707070' position='relative' transition='all .2s ease-in-out'
                   _before={{position: 'absolute', content: '""', width: '.6rem', height: '.6rem', borderRight: '.25rem solid #2B519B', borderBottom: '.25rem solid #2B519B', top: '50%', right: '0', transform: 'translate(-50%, -50%) rotateZ(-45deg)' }}
