@@ -36,6 +36,11 @@ function MyApp({ Component, pageProps }) {
             <Link fontSize='2rem' mr='6rem' transition='all .2s ease-in-out' 
               _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>会社情報</Link>
           </NextLink>
+
+          <NextLink href='/service' passHref>
+            <Link fontSize='2rem' mr='6rem' transition='all .2s ease-in-out' 
+              _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>事業内容</Link>
+          </NextLink>
           
           <NextLink href='/' passHref>
             <Link fontSize='2rem' w='24rem' h='100%' background='linear-gradient(to right, #55E1FF, #2B519B)'
@@ -118,6 +123,11 @@ function MyApp({ Component, pageProps }) {
                 <NextLink href='/company' passHref>
                   <Link fontSize='1.8rem' mr='6.4rem' transition='all .2s ease-in-out'
                       _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>会社情報</Link>
+                </NextLink>
+
+                <NextLink href='/service' passHref>
+                  <Link fontSize='1.8rem' mr='6.4rem' transition='all .2s ease-in-out'
+                      _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>事業内容</Link>
                 </NextLink>
 
                 <NextLink href='/' passHref>

@@ -128,7 +128,7 @@ export default function Home() {
           </Text>
 
           <Flex justify='space-between' align='stretch'>
-            <NextLink href='/' passHref>
+            <NextLink href='/company' passHref>
               <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out'
                 _before={{position: 'absolute', content: '""', width: '1rem', height: '1rem', top: '50%', right: '3.8rem',  borderRight: '.4rem solid white', borderBottom: '.4rem solid white', transform: 'translate(-50%, -50%) rotateZ(-45deg)', transition:'all .2s ease-in-out'}}
                 _hover={{color: '#2B519B', background: 'white', transition:'all .3s ease-in-out'}}>
@@ -136,15 +136,15 @@ export default function Home() {
               </Link>
             </NextLink>
 
-            <NextLink href='/' passHref>
+            <NextLink href='/service' passHref>
               <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out'
                 _before={{position: 'absolute', content: '""', width: '1rem', height: '1rem', top: '50%', right: '3.8rem',  borderRight: '.4rem solid white', borderBottom: '.4rem solid white', transform: 'translate(-50%, -50%) rotateZ(-45deg)', transition:'all .2s ease-in-out'}}
                 _hover={{color: '#2B519B', background: 'white', transition:'all .3s ease-in-out'}}>
-                私たちの働き方
+                事業内容
               </Link>
             </NextLink>
 
-            <NextLink href='/' passHref>
+            <NextLink href='/company#about' passHref>
               <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out'
                 _before={{position: 'absolute', content: '""', width: '1rem', height: '1rem', top: '50%', right: '3.8rem',  borderRight: '.4rem solid white', borderBottom: '.4rem solid white', transform: 'translate(-50%, -50%) rotateZ(-45deg)', transition:'all .2s ease-in-out'}}
                 _hover={{color: '#2B519B', background: 'white', transition:'all .3s ease-in-out'}}>
