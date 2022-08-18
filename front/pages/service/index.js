@@ -19,7 +19,7 @@ export default function Service() {
                         事業内容
                     </Heading>
                     <Text mb='6.4rem'>
-                        私たちは、真摯に挑戦する人材を育て、貴社ビジネスの成功貢献します。
+                        私たちは、真摯に挑戦する人材を育て、貴社ビジネスの成功に貢献します。
                     </Text>
 
                     <Flex w='100%' justify='space-between' align='stretch' mb='2.4rem'>
@@ -69,7 +69,7 @@ export default function Service() {
                             お客様の「人材不足解消」と更なる発展へのサポートが私たちの目的です。
                         </Text>
 
-                        <EntryButton txt='お問い合わせ'/>
+                        <EntryButton path='/contact' txt='お問い合わせ'/>
                     </Center>
                 </Flex>
 
@@ -89,7 +89,7 @@ export default function Service() {
                             お客様が必要とする人材を判断し最適なご提案を致します。
                         </Text>
 
-                        <EntryButton txt='お問い合わせ'/>
+                        <EntryButton path='/contact' txt='お問い合わせ'/>
                     </Center>
                 </Flex>
 
@@ -110,7 +110,7 @@ export default function Service() {
                             クライアント様の未来も一緒に育てていきたいと考えております。
                         </Text>
 
-                        <EntryButton txt='お問い合わせ'/>
+                        <EntryButton path='/contact' txt='お問い合わせ'/>
                     </Center>
                 </Flex>
             </Box>

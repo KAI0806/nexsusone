@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
               _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>事業内容</Link>
           </NextLink>
           
-          <NextLink href='/' passHref>
+          <NextLink href='/contact' passHref>
             <Link fontSize='2rem' w='24rem' h='100%' background='linear-gradient(to right, #55E1FF, #2B519B)'
               _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
               <Center height='100%' color='white'>お問い合わせ</Center>
@@ -63,35 +63,27 @@ function MyApp({ Component, pageProps }) {
               共に働けるメンバーを募集しています。
             </Text>
 
-            <EntryButton txt='エントリーはこちら'/>
+            <EntryButton path='/contact' txt='エントリーはこちら'/>
           </Flex>
 
           <Flex w='58%' pt='4.8rem' pl='3.2rem' justify='space-between' align='flex-start'>
             <Box width='36%'>
               <Center as='h3' w='28rem' color='white'fontSize='1.8rem' mb='4.8rem' p='.5rem' background='#A9A9A9'>最新求人</Center>
 
-              <NextLink href='/' passHref>
+              <NextLink href='/recruit' passHref>
                 <Link
                   display='block' fontSize='1.8rem' pl='.5rem' pb='.95rem' mb='4.2rem' borderBottom='.1rem solid #707070' position='relative' transition='all .2s ease-in-out'
                   _before={{position: 'absolute', content: '""', width: '.6rem', height: '.6rem', borderRight: '.25rem solid #2B519B', borderBottom: '.25rem solid #2B519B', top: '50%', right: '0', transform: 'translate(-50%, -50%) rotateZ(-45deg)' }}
                   _hover={{color: ' #2B519B', borderBottom: '.1rem solid #2B519B', transition: 'all .2s ease-in-out' }} >
-                  職種名
+                  Webクリエイター
                 </Link>
               </NextLink>
-              <NextLink href='/' passHref>
+              <NextLink href='/recruit' passHref>
                 <Link 
                   display='block' fontSize='1.8rem' pl='.5rem' pb='.95rem' mb='4.2rem' borderBottom='.1rem solid #707070' position='relative' transition='all .2s ease-in-out'
                   _before={{position: 'absolute', content: '""', width: '.6rem', height: '.6rem', borderRight: '.25rem solid #2B519B', borderBottom: '.25rem solid #2B519B', top: '50%', right: '0', transform: 'translate(-50%, -50%) rotateZ(-45deg)' }}
                   _hover={{color: ' #2B519B', borderBottom: '.1rem solid #2B519B', transition: 'all .2s ease-in-out' }} >
-                  職種名
-                </Link>
-              </NextLink>
-              <NextLink href='/' passHref>
-                <Link
-                  display='block' fontSize='1.8rem' pl='.5rem' pb='.95rem' mb='4.2rem' borderBottom='.1rem solid #707070' position='relative' transition='all .2s ease-in-out'
-                  _before={{position: 'absolute', content: '""', width: '.6rem', height: '.6rem', borderRight: '.25rem solid #2B519B', borderBottom: '.25rem solid #2B519B', top: '50%', right: '0', transform: 'translate(-50%, -50%) rotateZ(-45deg)' }}
-                  _hover={{color: ' #2B519B', borderBottom: '.1rem solid #2B519B', transition: 'all .2s ease-in-out' }} >
-                  職種名
+                  映像クリエイター
                 </Link>
               </NextLink>
             </Box>
@@ -130,7 +122,7 @@ function MyApp({ Component, pageProps }) {
                       _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>事業内容</Link>
                 </NextLink>
 
-                <NextLink href='/' passHref>
+                <NextLink href='/contact' passHref>
                   <Link fontSize='1.8rem' transition='all .2s ease-in-out'
                       _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>お問い合わせ</Link>
                 </NextLink>

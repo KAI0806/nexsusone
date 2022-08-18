@@ -18,7 +18,7 @@ export default function Home() {
               突き進め
             </Heading>
             
-            <EntryButton txt='採用情報を見る'/>
+            <EntryButton path='/recruit' txt='採用情報を見る'/>
           </Box>
         </Box>
       </Box>
@@ -27,18 +27,22 @@ export default function Home() {
       <Box as='section' pt='10.4rem' mb='8.8rem'>
         <Flex w='75%' m=' 0 auto 8.8rem' justify='center' align='center'>
           <Box w='50%'>
-            <Heading as='h3' className='hansans' color='#2B519B' fontSize='3.6rem' mb='6.4rem'>
-              １度切り開いた未来は<br/>
+            <Heading as='h3' textAlign='center' className='hansans' color='#2B519B' fontSize='3.6rem' mb='6.4rem'>
+              １度切り開いた
+                <Box as='span' fontSize='4.3rem' m='0 3.2rem' background='linear-gradient(to left, #55E1FF, #2B519B)' backgroundClip='text' color='transparent'>
+                  未来
+                </Box>
+              は<br/>
               次に進むための1つのステップです。
             </Heading>
 
-            <Text lineHeight={2}>
-              次のステップ、その先の幸せや成果に繋げるという意味を込めた「Next」と、<br/>
-              各々がオンリーワン「One」になるという2つの意味を込めて<br/>
-              Nexsusoneは誕生しました。<br/>
-              やるからには、ここまでやるかと言われるくらい真正面に<br/>
-              ぶつかってくるように頑張り、<br/>
-              次のステップやその先の幸せや成果を得る道を目指しませんか？
+            <Text align='center' lineHeight={2}>
+              次の成功、次の幸運をつかむ、<br/>
+              成果をあげる想いを込めた「Nexsus」に、<br/>
+              各々がNo.1になるというゴールを込めて「Nexsusone」は誕生しました。<br/>
+              <br/>
+              未経験者でも、自分のゴールに向かって<br/>
+              努力し挑戦し続ける人を私たちは応援します。
             </Text>
           </Box>
 
@@ -52,55 +56,37 @@ export default function Home() {
             </Heading>
 
             <Box>
-              <NextLink href='/'  passHref>
+              <NextLink href='/recruit'  passHref>
                 <Link w='100%' h='15rem' mb='1.6rem' display='flex' justifyContent='flex-start' alignItems='stretch' boxShadow='0 .3rem .6rem rgba(0, 0, 0, 16%)'
                   _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
                   <Center w='22.5%' color='white' fontSize='2rem' background='url(/top/job_bg.jpg) no-repeat center center/cover'>
-                    雇用形態
+                    正社員
                   </Center>
                   <Flex w='77.5%' h='100%' pl='8rem' flexDirection='column' justify='center' position='relative'
                     _before={{position: 'absolute', content: '""', width: '1.5rem', height: '1.5rem', top: '50%', right: '2.8rem',  borderRight: '.5rem solid #2B519B', borderBottom: '.5rem solid #2B519B', transform: 'translate(-50%, -50%) rotateZ(-45deg)'}}>
                     <Heading as='h4' fontSize='2.4rem'>
-                      職種名職種名職種名
+                      Webクリエイター
                     </Heading>
                     <Text fontWeight='normal'>
-                      勤務地:東京都港区
+                      勤務地:東京都
                     </Text>
                   </Flex>
                 </Link>
               </NextLink>
 
-              <NextLink href='/'  passHref>
+              <NextLink href='/recruit'  passHref>
                 <Link w='100%' h='15rem' mb='1.6rem' display='flex' justifyContent='flex-start' alignItems='stretch' boxShadow='0 .3rem .6rem rgba(0, 0, 0, 16%)'
                   _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
                   <Center w='22.5%' color='white' fontSize='2rem' background='url(/top/job_bg.jpg) no-repeat center center/cover'>
-                    雇用形態
+                    正社員
                   </Center>
                   <Flex w='77.5%' h='100%' pl='8rem' flexDirection='column' justify='center' position='relative'
                     _before={{position: 'absolute', content: '""', width: '1.5rem', height: '1.5rem', top: '50%', right: '2.8rem',  borderRight: '.5rem solid #2B519B', borderBottom: '.5rem solid #2B519B', transform: 'translate(-50%, -50%) rotateZ(-45deg)'}}>
                     <Heading as='h4' fontSize='2.4rem'>
-                      職種名職種名職種名
+                      映像クリエイター
                     </Heading>
                     <Text fontWeight='normal'>
-                      勤務地:東京都港区
-                    </Text>
-                  </Flex>
-                </Link>
-              </NextLink>
-
-              <NextLink href='/'  passHref>
-                <Link w='100%' h='15rem' display='flex' justifyContent='flex-start' alignItems='stretch' boxShadow='0 .3rem .6rem rgba(0, 0, 0, 16%)'
-                  _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
-                  <Center w='22.5%' color='white' fontSize='2rem' background='url(/top/job_bg.jpg) no-repeat center center/cover'>
-                    雇用形態
-                  </Center>
-                  <Flex w='77.5%' h='100%' pl='8rem' flexDirection='column' justify='center' position='relative'
-                    _before={{position: 'absolute', content: '""', width: '1.5rem', height: '1.5rem', top: '50%', right: '2.8rem',  borderRight: '.5rem solid #2B519B', borderBottom: '.5rem solid #2B519B', transform: 'translate(-50%, -50%) rotateZ(-45deg)'}}>
-                    <Heading as='h4' fontSize='2.4rem'>
-                      職種名職種名職種名
-                    </Heading>
-                    <Text fontWeight='normal'>
-                      勤務地:東京都港区
+                      勤務地:東京都
                     </Text>
                   </Flex>
                 </Link>
@@ -110,21 +96,22 @@ export default function Home() {
         </Flex>
 
         <Center>
-          <EntryButton txt='エントリーはこちら'/>
+          <EntryButton path='/contact' txt='エントリーはこちら'/>
         </Center>
       </Box>
 
       {/* about */}
       <Box as='section' p='10.8rem 0 8.8rem' background='url(/top/about_bg.jpg) no-repeat center center/cover'>
         <Box w='75%' m='auto'>
-          <Heading as='h2' className='hansans' color='white' fontSize='3.6rem' mb='8.8rem'>
+          <Heading as='h2' className='hansans' textAlign='center' color='white' fontSize='3.6rem' mb='8.8rem'>
             Nexsusoneについて
           </Heading>
 
-          <Text color='white' lineHeight={2.5} mb='12.8rem'>
-            現在はWEBデザイナー、映像クリエイターなどの人材を育て、クライアントへご紹介しています。<br/>
-            ゼロからスタートする未経験者でも、しっかり研修を受け、スキルを付けて、現場で活躍されている方はたくさんいます。<br/>
-            弊社のサポートを最大限に活かして、次のステップへ進みませんか？
+          <Text align='center' color='white' lineHeight={2.5} mb='9.6rem'>
+            現在はWEBデザイナーや映像クリエイターなどの人材を育てクライアントへご紹介しています。<br/>
+            ゼロからスタートする未経験者でも、しっかり研修を受けスキルを身に付け、現在東京の現場で活躍されている人員が多く在籍しております。<br/>
+            <br/>
+            IT技術を要する専門職から営業代行まで幅広く対応できお客様の「人材不足解消」と更なる発展へのサポートを致します。
           </Text>
 
           <Flex justify='space-between' align='stretch'>

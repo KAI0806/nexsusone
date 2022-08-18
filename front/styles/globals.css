@@ -47,6 +47,37 @@ a {
   background: linear-gradient(to left, #55E1FF, #2B519B);
 }
 
+select{
+  font-size: 2.2rem;
+  margin: 4.8rem 0;
+  padding: 1.6rem 3.6rem;
+  border: solid .1rem #707070;
+  border-radius: .3rem;
+  width: 100%;
+  background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+  position: relative;
+}
+
+.select_wrap{
+  position: relative;
+  width: 55%;
+}
+
+.select_wrap::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 3.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-right: .1rem solid #707070;
+  border-bottom: .1rem solid #707070;
+  transform: translate(-50%, -70%) rotateZ(45deg);
+}
+
 .entry_button:hover{
   box-shadow: inset .3rem .3rem .6rem rgba(0, 0, 0, 30%);
 }

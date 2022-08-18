@@ -20,7 +20,7 @@ export default function Recruit() {
                     </Heading>
 
                     <Box w='67.6rem'>
-                        <NextLink href='/'  passHref>
+                        <NextLink href='#recruit01'  passHref>
                             <Link w='100%' h='15rem' mb='1.6rem' display='flex' justifyContent='flex-start' alignItems='stretch' boxShadow='0 .3rem .6rem rgba(0, 0, 0, 16%)'
                             _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
                                 <Center w='22.5%' color='white' fontSize='2rem' background='url(/top/job_bg.jpg) no-repeat center center/cover'>
@@ -38,7 +38,7 @@ export default function Recruit() {
                             </Link>
                         </NextLink>
 
-                        <NextLink href='/'  passHref>
+                        <NextLink href='#recruit02'  passHref>
                             <Link w='100%' h='15rem' display='flex' justifyContent='flex-start' alignItems='stretch' boxShadow='0 .3rem .6rem rgba(0, 0, 0, 16%)'
                             _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
                                 <Center w='22.5%' color='white' fontSize='2rem' background='url(/top/job_bg.jpg) no-repeat center center/cover'>
@@ -58,7 +58,7 @@ export default function Recruit() {
                     </Box>
                 </Center>
 
-                <Box w='66.66%' m='auto' pt='3rem'>
+                <Box id='recruit01' w='66.66%' m='auto' pt='3rem'>
                     <Flex justify='space-between' align='center' mb='3.6rem'>
                         <Center flexDirection='column' w='50%' h='34rem' background='url(/recruit/recruit01_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                             _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
@@ -148,7 +148,7 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='7.2rem'>
-                                    <EntryButton txt='応募する'/>
+                                    <EntryButton path='/contact' txt='応募する'/>
                                 </Center>
                             </AccordionPanel>
                         </AccordionItem>
@@ -204,7 +204,7 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='7.2rem'>
-                                    <EntryButton txt='応募する'/>
+                                    <EntryButton path='/contact' txt='応募する'/>
                                 </Center>
                             </AccordionPanel>
                         </AccordionItem>
@@ -233,7 +233,7 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='5.6rem'>
-                                    <EntryButton txt='応募する'/>
+                                    <EntryButton path='/contact' txt='応募する'/>
                                 </Center>
 
                                 <Box borderTop='solid .2rem #707070'>
@@ -278,12 +278,12 @@ export default function Recruit() {
                     </Accordion>
 
                     <Center mb='5.6rem'>
-                        <EntryButton txt='応募する'/>
+                        <EntryButton path='/contact' txt='応募する'/>
                     </Center>
                 </Box>
 
                 {/* creater */}
-                <Box w='66.66%' m='auto' pt='3rem'>
+                <Box id='recruit02' w='66.66%' m='auto' pt='3rem'>
                     <Flex direction='row-reverse' justify='space-between' align='center' mb='3.6rem'>
                         <Center flexDirection='column' w='50%' h='34rem' background='url(/recruit/recruit02_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                             _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
@@ -376,7 +376,7 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='7.2rem'>
-                                    <EntryButton txt='応募する'/>
+                                    <EntryButton path='/contact' txt='応募する'/>
                                 </Center>
                             </AccordionPanel>
                         </AccordionItem>
@@ -432,7 +432,7 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='7.2rem'>
-                                    <EntryButton txt='応募する'/>
+                                    <EntryButton path='/contact' txt='応募する'/>
                                 </Center>
                             </AccordionPanel>
                         </AccordionItem>
@@ -460,7 +460,7 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='5.6rem'>
-                                    <EntryButton txt='応募する'/>
+                                    <EntryButton path='/contact' txt='応募する'/>
                                 </Center>
 
                                 <Box borderTop='solid .2rem #707070'>
@@ -505,7 +505,7 @@ export default function Recruit() {
                     </Accordion>
 
                     <Center mb='5.6rem'>
-                        <EntryButton txt='応募する'/>
+                        <EntryButton path='/contact' txt='応募する'/>
                     </Center>
                 </Box>
             </Box>

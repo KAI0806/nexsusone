@@ -12,17 +12,34 @@ export default function Company() {
 
             {/* message */}
             <Box id="message" as="section">
-                <Flex w='66.66%' m='0 auto' p='3.2rem 5.6rem 6.4rem' justify='center' align='center' direction='column' position='relative' zIndex={10} background='white' boxShadow='0 .3rem .6rem rgba(0,0,0,16%)' transform='translateY(-11.2rem)'>
+                <Flex w='66.66%' m='0 auto -3rem' p='3.2rem 5.6rem 6.4rem' justify='center' align='center' direction='column' position='relative' zIndex={10} background='white' boxShadow='0 .3rem .6rem rgba(0,0,0,16%)' transform='translateY(-11.2rem)'>
                     <Center as='h2' className="hansans" w='36.8rem' pb='1.6rem' mb='4.2rem' color='#2B519B' fontSize='3.6rem' borderBottom='solid .1rem #A9A9A9'>
                         代表挨拶
                     </Center>
                     
                     <Flex w='100%' justify='center' align='center'>
-                        <Image src="/company/sample.jpg" alt="代表取締役" width='44.52%' mr='6.4rem'/>
+                        <Image src="/company/message.jpg" alt="代表取締役" width='44.52%' mr='6.4rem'/>
 
                         <Box w='50%'>
-                            <Text mb='2.4rem' lineHeight={2.5}>
-                                案件概要、どういう仕事か、等。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            <Text align='center' mb='2.4rem' >
+                                Nexsusoneが目指す理想の姿は<br/>
+                                「次のステップ（未来）へ架け橋となる会社」です。<br/>
+                                人はそれぞれが様々な経験をして、今に至ると思います。<br/>
+                                <br/>
+                                「次の成功や次の幸運をつかみたい」<br/>
+                                成果に繋げていくことだけではなく<br/>
+                                やるからには各々がNo.1になると<br/>
+                                そういった熱い想いを持った人と仕事をしていきたいです。<br/>
+                                <br/>
+                                私自身、経営者として成長過程にいる中で、<br/>
+                                毎日が挑戦と試行錯誤の連続です。<br/>
+                                <br/>
+                                Nexsusoneも成長段階にいる会社で本気で<br/>
+                                「次のステップへ架け橋となる会社」として<br/>
+                                走り続けている会社になります。<br/>
+                                だからこそ皆で創り上げ、盛り上げていきたいと思っております。<br/>
+                                私たちが目指す姿や、 成し遂げようとしていることを全員で共有し、<br/>
+                                その実現に向けて協力していきます。
                             </Text>
                             <Text align='right'>代表取締役　佐々木 孝</Text>
                         </Box>
@@ -31,7 +48,7 @@ export default function Company() {
             </Box>
 
             {/* about */}
-            <Box id="about" as="section" p='5.6rem 0 8.8rem' background='url(/company/about_bg.jpg) no-repeat center center/cover'>
+            <Box id="about" as="section" p='9.6rem 0 8.8rem' background='url(/company/about_bg.jpg) no-repeat center center/cover'>
                 <Flex w='66.66%' m='0 auto' justify='center' align='center' direction='column'>
                     <Center as="h2" className="hansans" w='19.2rem' color='white' fontSize='3.6rem' pb='1rem' mb='8rem' borderBottom='solid .1rem white'>
                         会社概要
@@ -50,7 +67,7 @@ export default function Company() {
 
                             <Box borderBottom='.1rem solid white' pb='.8rem' mb='1.6rem'>
                                 <Heading as='h3' fontSize='1.8rem' color='white' mb='.4rem'>
-                                    代表名
+                                    代表取締役
                                 </Heading>
                                 <Text color='white'>
                                     佐々木 考
