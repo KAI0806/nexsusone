@@ -2,6 +2,7 @@ import NextLink from 'next/link'
 import { Box, Heading, Flex, Text, Link, Image, Center, border } from "@chakra-ui/react";
 
 import EntryButton from '../../components/entryButton';
+import Slider from '../../components/Slider';
 
 export default function Service() {
     return (
@@ -114,6 +115,8 @@ export default function Service() {
                     </Center>
                 </Flex>
             </Box>
+
+            <Slider/>
         </main>
     );
 }

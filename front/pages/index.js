@@ -2,6 +2,7 @@ import NextLink from 'next/Link'
 import { Heading, Text, UnorderedList, ListItem, Box, Flex, Center,Link } from '@chakra-ui/react';
 
 import EntryButton from '../components/entryButton';
+import Slider from '../components/Slider';
 
 export default function Home() {
   return (
@@ -141,6 +142,8 @@ export default function Home() {
           </Flex>
         </Box>
       </Box>
+
+      <Slider/>
     </main>
   )
 };
