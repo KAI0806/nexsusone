@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
 import { Box, Heading, Center, Link, Text, Flex, Image, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel } from "@chakra-ui/react";
 
-import EntryButton from '../../components/entryButton';
+import EntryButton from '../../components/EntryButton';
 
 export default function Recruit() {
     return (

@@ -1,9 +1,9 @@
 import '../styles/globals.css';
 import Head from 'next/head'
-import NextLink from 'next/Link'
+import NextLink from 'next/link'
 import { Flex, Heading, Image, Link, Center, Box, Text, } from '@chakra-ui/react';
 
-import EntryButton from '../components/entryButton';
+import EntryButton from '../components/EntryButton';
 
 function MyApp({ Component, pageProps }) {
   return (

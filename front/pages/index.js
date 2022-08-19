@@ -1,7 +1,7 @@
-import NextLink from 'next/Link'
+import NextLink from 'next/link'
 import { Heading, Text, UnorderedList, ListItem, Box, Flex, Center,Link } from '@chakra-ui/react';
 
-import EntryButton from '../components/entryButton';
+import EntryButton from '../components/EntryButton';
 import Slider from '../components/Slider';
 
 export default function Home() {
@@ -117,7 +117,7 @@ export default function Home() {
 
           <Flex justify='space-between' align='stretch'>
             <NextLink href='/company' passHref>
-              <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out'
+              <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out' boxShadow='0 .3rem .6rem #243452, inset 0 .3rem .6rem #243452'
                 _before={{position: 'absolute', content: '""', width: '1rem', height: '1rem', top: '50%', right: '3.8rem',  borderRight: '.4rem solid white', borderBottom: '.4rem solid white', transform: 'translate(-50%, -50%) rotateZ(-45deg)', transition:'all .2s ease-in-out'}}
                 _hover={{color: '#2B519B', background: 'white', transition:'all .3s ease-in-out'}}>
                 代表メッセージ
@@ -125,7 +125,7 @@ export default function Home() {
             </NextLink>
 
             <NextLink href='/service' passHref>
-              <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out'
+              <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out' boxShadow='0 .3rem .6rem #243452, inset 0 .3rem .6rem #243452'
                 _before={{position: 'absolute', content: '""', width: '1rem', height: '1rem', top: '50%', right: '3.8rem',  borderRight: '.4rem solid white', borderBottom: '.4rem solid white', transform: 'translate(-50%, -50%) rotateZ(-45deg)', transition:'all .2s ease-in-out'}}
                 _hover={{color: '#2B519B', background: 'white', transition:'all .3s ease-in-out'}}>
                 事業内容
@@ -133,7 +133,7 @@ export default function Home() {
             </NextLink>
 
             <NextLink href='/company#about' passHref>
-              <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out'
+              <Link className='aboutLink' fontSize='2.1rem' color='white' w='30%' textAlign='center' padding='8rem 0' border='solid .15rem white' position='relative' transition='all .2s ease-in-out' boxShadow='0 .3rem .6rem #243452, inset 0 .3rem .6rem #243452'
                 _before={{position: 'absolute', content: '""', width: '1rem', height: '1rem', top: '50%', right: '3.8rem',  borderRight: '.4rem solid white', borderBottom: '.4rem solid white', transform: 'translate(-50%, -50%) rotateZ(-45deg)', transition:'all .2s ease-in-out'}}
                 _hover={{color: '#2B519B', background: 'white', transition:'all .3s ease-in-out'}}>
                 会社情報

@@ -22,7 +22,7 @@ export default function Contact() {
                     </Text>
                 </Center>
 
-                <form>
+                {/* <form>
                     <Flex direction='column' justify='center' align='flex-start' pt='7.2rem' m='auto' w='66.66%'>
                         <label className="select_wrap">
                             <select>
@@ -51,7 +51,7 @@ export default function Contact() {
                             </Button>
                         </Center>
                     </Flex>
-                </form>
+                </form> */}
             </Box>
         </main>
     );
