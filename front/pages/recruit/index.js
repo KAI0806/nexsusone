@@ -1,20 +1,20 @@
 import NextLink from 'next/link';
 import { Box, Heading, Center, Link, Text, Flex, Image, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel } from "@chakra-ui/react";
 
-import EntryButton from '../../components/EntryButton';
+import styles from '../../styles/recruit.module.css'
 
 export default function Recruit() {
     return (
         <main>
-            <Box as="section" h='56rem' position='relative' background='url(/recruit/kv_bg.jpg) no-repeat center center/cover'>
+            <Box id={styles.kv} className='kv' as="section" h='56rem' position='relative' background='url(/recruit/kv_bg.jpg) no-repeat center center/cover'>
                 <Heading className="hansans" color='white' fontSize='6.8rem' position='absolute' top='50%' left='24rem' transform='translate(0, -50%)'
                     _before={{position: 'absolute', content: '""', top: '50%', left: '50%', width: '36rem', height: '38rem', transform: 'translate(-50%, -40%)', blendMode: 'screen', zIndex: '-1',  background: 'url(/company/kv_txt.svg) no-repeat center center/contain'}}>
                     RECRUIT
                 </Heading>
             </Box>
 
-            <Box as='section'>
-                <Center flexDirection='column' w='66.66%' m='0 auto -11.2rem' p='3.2rem 0 8.8rem' background='white' boxShadow='0 .3rem .6rem rgba(0,0,0,16%)' transform='translateY(-11.2rem)'>
+            <Box as='section' id={styles.recruit}>
+                <Center className={styles.wrap} flexDirection='column' w='66.66%' m='0 auto -11.2rem' p='3.2rem 0 8.8rem' background='white' boxShadow='0 .3rem .6rem rgba(0,0,0,16%)' transform='translateY(-11.2rem)'>
                     <Heading as='h2' className="hansans" w='36.8rem' pb='1.6rem' mb='5.6rem' color='#2B519B' textAlign='center' fontSize='3.6rem' borderBottom='solid .1rem #A9A9A9'>
                         現在募集中の職種
                     </Heading>
@@ -58,8 +58,8 @@ export default function Recruit() {
                     </Box>
                 </Center>
 
-                <Box id='recruit01' w='66.66%' m='auto' pt='3rem'>
-                    <Flex justify='space-between' align='center' mb='3.6rem'>
+                <Box id='recruit01' className={styles.content} w='66.66%' m='auto' pt='3rem'>
+                    <Flex className={styles.inner} justify='space-between' align='center' mb='3.6rem'>
                         <Center flexDirection='column' w='50%' h='34rem' background='url(/recruit/recruit01_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                             _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
                             <Image src='/recruit/recruit01.svg' alt='Webクリエイター' w='6.4rem'/>
@@ -68,20 +68,20 @@ export default function Recruit() {
                             </Heading>
                         </Center>
                         <Text fontSize='2.4rem' textAlign='center' ml='1rem'>
-                            未経験歓迎！WEB動画の撮影・WEBデザイン！<br/>
-                            業界高水準の収入を得る人材にイチから成長できます！<br/>
-                            一緒に成長できる環境でゼロからステップアップを♪
+                            未経験歓迎！<br className='sp_only'/>WEB動画の撮影・WEBデザイン！<br/>
+                            業界高水準の収入を得る人材に<br className='sp_only'/>イチから成長できます！<br/>
+                            <br className='sp_only'/>一緒に成長できる環境で<br className='sp_only'/>ゼロからステップアップを♪
                         </Text>
                     </Flex>
 
-                    <Accordion allowToggle mb='7.2rem'>
+                    <Accordion className={styles.accordion} allowToggle mb='7.2rem'>
                         <AccordionItem borderTop='solid .2rem #2B519B' borderBottom='solid .2rem #2B519B'>
                             <Heading as='h4'>
-                                <AccordionButton border='none' background='#E2FAFF'>
+                                <AccordionButton className={styles.accordionButton} border='none' background='#E2FAFF'>
                                     <Box flex='1' textAlign='left' p='2.4rem 3.6rem' fontSize='2.4rem' color='#3B4043'>
                                         応募要項
                                     </Box>
-                                    <AccordionIcon w='3.2rem' h='3.2rem' color='#98A6B5'/>
+                                    <AccordionIcon className={styles.accordionIcon} w='3.2rem' h='3.2rem' color='#98A6B5'/>
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel>
@@ -148,18 +148,20 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='7.2rem'>
-                                    <EntryButton path='/contact' txt='応募する'/>
+                                    <NextLink href='/contact' passHref>
+                                        <Link className='entry_button'>応募する</Link>
+                                    </NextLink>
                                 </Center>
                             </AccordionPanel>
                         </AccordionItem>
 
                         <AccordionItem borderBottom='solid .2rem #2B519B'>
                             <Heading as='h4'>
-                                <AccordionButton border='none' background='#D3F1FF'>
+                                <AccordionButton className={styles.accordionButton} border='none' background='#D3F1FF'>
                                     <Box flex='1' textAlign='left' p='2.4rem 3.6rem' fontSize='2.4rem' color='#3B4043'>
                                         待遇・研修内容
                                     </Box>
-                                    <AccordionIcon w='3.2rem' h='3.2rem' color='#98A6B5'/>
+                                    <AccordionIcon className={styles.accordionIcon} w='3.2rem' h='3.2rem' color='#98A6B5'/>
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel>
@@ -204,18 +206,20 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='7.2rem'>
-                                    <EntryButton path='/contact' txt='応募する'/>
+                                    <NextLink href='/contact' passHref>
+                                        <Link className='entry_button'>応募する</Link>
+                                    </NextLink>
                                 </Center>
                             </AccordionPanel>
                         </AccordionItem>
 
                         <AccordionItem borderBottom='solid .2rem #2B519B'>
                             <Heading as='h4'>
-                                <AccordionButton border='none' background='#B6E8FF'>
+                                <AccordionButton className={styles.accordionButton} border='none' background='#B6E8FF'>
                                     <Box flex='1' textAlign='left' p='2.4rem 3.6rem' fontSize='2.4rem' color='#3B4043'>
                                         アピールポイント
                                     </Box>
-                                    <AccordionIcon w='3.2rem' h='3.2rem' color='#98A6B5'/>
+                                    <AccordionIcon className={styles.accordionIcon} w='3.2rem' h='3.2rem' color='#98A6B5'/>
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel>
@@ -233,14 +237,16 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='5.6rem'>
-                                    <EntryButton path='/contact' txt='応募する'/>
+                                    <NextLink href='/contact' passHref>
+                                        <Link className='entry_button'>応募する</Link>
+                                    </NextLink>
                                 </Center>
 
                                 <Box borderTop='solid .2rem #707070'>
                                     <Heading as='h5' fontSize='2rem' color='#2B519B' p='2.4rem 0' borderBottom='solid .1rem #707070'>
                                         先輩インタビュー
                                     </Heading>
-                                    <Flex m='3.6rem auto 9.6rem'>
+                                    <Flex className={styles.interview} m='3.6rem auto 9.6rem'>
                                         <Box w='50%'>
                                             <Box w='88.75%' pb='3.2rem' mb='2.8rem' position='relative'>
                                                 <Image src='/recruit/interview01.jpg' alt='社員インタビュー' w='100%'/>
@@ -250,24 +256,24 @@ export default function Recruit() {
                                             </Box>
 
                                             <Text>
-                                                飲食店から未経験で当社に入社したので、<br/>
-                                                今から挑戦しようと考えている方々の不安な気持ちも<br/>
+                                                飲食店から未経験で当社に入社したので、<br className='pc_only'/>
+                                                今から挑戦しようと考えている方々の不安な気持ちも<br className='pc_only'/>
                                                 良くわかります。<br/>
-                                                当社では「基礎中の基礎」から丁寧に教えてくれます。<br/>
+                                                当社では「基礎中の基礎」から丁寧に教えてくれます。<br className='pc_only'/>
                                                 そんな環境なので不安もスグに払拭できますよ！
                                             </Text>
                                         </Box>
 
                                         <Box w='50%'>
                                             <Box w='88.75%' pb='3.2rem' mb='2.8rem' position='relative'>
-                                                <Image src='/recruit/interview01.jpg' alt='社員インタビュー' w='100%'/>
+                                                <Image src='/recruit/interview02.jpg' alt='社員インタビュー' w='100%'/>
                                                 <Center w='55%' p='1.6rem 0' color='white' fontSize='2.3rem' position='absolute' bottom='0' left='0' background='linear-gradient(to left, #55E1FF, #2B519B)'>
                                                     Iさん(20代女性)
                                                 </Center>
                                             </Box>
 
                                             <Text>
-                                                動画鑑賞が趣味で、いつか作る側に立ち、誰かに見てもらえる作品を作ってみたいという想いを抱いていましたがスキルもなく挑戦することを諦めていました。<br/>
+                                                動画鑑賞が趣味で、いつか作る側に立ち、誰かに見てもらえる作品を作ってみたいという想いを抱いていましたがスキルもなく挑戦することを諦めていました。<br className='pc_only'/>
                                                 当社を知り、もう迷うことなくスグに応募しました。
                                             </Text>
                                         </Box>
@@ -278,13 +284,15 @@ export default function Recruit() {
                     </Accordion>
 
                     <Center mb='5.6rem'>
-                        <EntryButton path='/contact' txt='応募する'/>
+                        <NextLink href='/contact' passHref>
+                            <Link className='entry_button'>応募する</Link>
+                        </NextLink>
                     </Center>
                 </Box>
 
                 {/* creater */}
-                <Box id='recruit02' w='66.66%' m='auto' pt='3rem'>
-                    <Flex direction='row-reverse' justify='space-between' align='center' mb='3.6rem'>
+                <Box id='recruit02' className={styles.content} w='66.66%' m='auto' pt='3rem'>
+                    <Flex className={styles.inner} direction='row-reverse' justify='space-between' align='center' mb='3.6rem'>
                         <Center flexDirection='column' w='50%' h='34rem' background='url(/recruit/recruit02_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                             _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
                             <Image src='/recruit/recruit02.svg' alt='Webクリエイター' w='6.4rem'/>
@@ -302,14 +310,14 @@ export default function Recruit() {
                         </Text>
                     </Flex>
 
-                    <Accordion allowToggle mb='7.2rem'>
+                    <Accordion className={styles.accordion} allowToggle mb='7.2rem'>
                         <AccordionItem borderTop='solid .2rem #2B519B' borderBottom='solid .2rem #2B519B'>
                             <Heading as='h4'>
-                                <AccordionButton border='none' background='#E2FAFF'>
+                                <AccordionButton className={styles.accordionButton} border='none' background='#E2FAFF'>
                                     <Box flex='1' textAlign='left' p='2.4rem 3.6rem' fontSize='2.4rem' color='#3B4043'>
                                         応募要項
                                     </Box>
-                                    <AccordionIcon w='3.2rem' h='3.2rem' color='#98A6B5'/>
+                                    <AccordionIcon className={styles.accordionIcon} w='3.2rem' h='3.2rem' color='#98A6B5'/>
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel>
@@ -376,18 +384,20 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='7.2rem'>
-                                    <EntryButton path='/contact' txt='応募する'/>
+                                    <NextLink href='/contact' passHref>
+                                        <Link className='entry_button'>応募する</Link>
+                                    </NextLink>
                                 </Center>
                             </AccordionPanel>
                         </AccordionItem>
 
                         <AccordionItem borderBottom='solid .2rem #2B519B'>
                             <Heading as='h4'>
-                                <AccordionButton border='none' background='#D3F1FF'>
+                                <AccordionButton className={styles.accordionButton} border='none' background='#D3F1FF'>
                                     <Box flex='1' textAlign='left' p='2.4rem 3.6rem' fontSize='2.4rem' color='#3B4043'>
                                         待遇・研修内容
                                     </Box>
-                                    <AccordionIcon w='3.2rem' h='3.2rem' color='#98A6B5'/>
+                                    <AccordionIcon className={styles.accordionIcon} w='3.2rem' h='3.2rem' color='#98A6B5'/>
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel>
@@ -432,18 +442,20 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='7.2rem'>
-                                    <EntryButton path='/contact' txt='応募する'/>
+                                    <NextLink href='/contact' passHref>
+                                        <Link className='entry_button'>応募する</Link>
+                                    </NextLink>
                                 </Center>
                             </AccordionPanel>
                         </AccordionItem>
 
                         <AccordionItem borderBottom='solid .2rem #2B519B'>
                             <Heading as='h4'>
-                                <AccordionButton border='none' background='#B6E8FF'>
+                                <AccordionButton className={styles.accordionButton} border='none' background='#B6E8FF'>
                                     <Box flex='1' textAlign='left' p='2.4rem 3.6rem' fontSize='2.4rem' color='#3B4043'>
                                         アピールポイント
                                     </Box>
-                                    <AccordionIcon w='3.2rem' h='3.2rem' color='#98A6B5'/>
+                                    <AccordionIcon className={styles.accordionIcon} w='3.2rem' h='3.2rem' color='#98A6B5'/>
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel>
@@ -460,14 +472,16 @@ export default function Recruit() {
                                 </Box>
 
                                 <Center mb='5.6rem'>
-                                    <EntryButton path='/contact' txt='応募する'/>
+                                    <NextLink href='/contact' passHref>
+                                        <Link className='entry_button'>応募する</Link>
+                                    </NextLink>
                                 </Center>
 
                                 <Box borderTop='solid .2rem #707070'>
                                     <Heading as='h5' fontSize='2rem' color='#2B519B' p='2.4rem 0' borderBottom='solid .1rem #707070'>
                                         先輩インタビュー
                                     </Heading>
-                                    <Flex m='3.6rem auto 9.6rem'>
+                                    <Flex className={styles.interview} m='3.6rem auto 9.6rem'>
                                         <Box w='50%'>
                                             <Box w='88.75%' pb='3.2rem' mb='2.8rem' position='relative'>
                                                 <Image src='/recruit/interview03.jpg' alt='社員インタビュー' w='100%'/>
@@ -505,7 +519,9 @@ export default function Recruit() {
                     </Accordion>
 
                     <Center mb='5.6rem'>
-                        <EntryButton path='/contact' txt='応募する'/>
+                        <NextLink href='/contact' passHref>
+                            <Link className='entry_button'>応募する</Link>
+                        </NextLink>
                     </Center>
                 </Box>
             </Box>

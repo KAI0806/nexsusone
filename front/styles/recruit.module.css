@@ -1,0 +1,131 @@
+@media screen and (max-width: 767px){
+    #kv{
+        background: url('/recruit/kv_bg_sp.jpg') no-repeat center center/cover;
+    }
+
+    #recruit .wrap{
+        width: 85.33%;
+        padding: 2.4rem 1rem 0;
+        transform: translateY(-6.1rem);
+    }
+
+    #recruit .wrap h2{
+        font-size: 2.4rem;
+        width: 19.5rem;
+        padding-bottom: .9rem;
+        margin-bottom: .9rem;
+    }
+
+    #recruit .wrap > div{
+        width: 100%;
+    }
+
+    #recruit .wrap > div a{
+        height: 9.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #recruit .wrap > div a div:first-child{
+        font-size: 1.4rem;
+    }
+
+    #recruit .wrap > div a div:nth-child(2){
+        padding-left: 1.5rem;
+    }
+
+    #recruit .wrap > div a div:nth-child(2) h4{
+        font-size: 1.6rem;
+    }
+
+    #recruit .wrap > div a div:nth-child(2) p{
+        font-size: 1.2rem;
+    }
+
+    #recruit .wrap > div a div:nth-child(2)::before{
+        border-right: 0.25rem solid #2B519B;
+        border-bottom: 0.25rem solid #2B519B;
+    }
+
+    #recruit .content{
+        width: 85.33%;
+        padding-top: 5rem;
+    }
+
+    #recruit .content:nth-child(3){
+        padding-top: 0;
+    }
+
+    #recruit .content .inner{
+        flex-direction: column;
+    }
+
+    #recruit .content .inner > div{
+        width: 100%;
+        height: 18rem;
+        padding: 1.2rem 2rem;
+        margin-bottom: 2.28rem;
+    }
+
+    #recruit .content .inner > div::before{
+        width: calc(100% - 2rem);
+        height: calc(100% - 2.4rem);
+    }
+
+    #recruit .content .inner > div img{
+        width: 2.9rem;
+    }
+
+    #recruit .content .inner > div h3{
+        font-size: 2rem;
+        margin-top: .9rem;
+    }
+
+    #recruit .content .inner p{
+        font-size: 1.4rem;
+    }
+
+    #recruit .accordion{
+        margin-bottom: 4rem;
+    }
+
+    #recruit .accordion .accordionButton div{
+        padding: 1.7rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    #recruit .accordionIcon{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #recruit .accordion h5{
+        font-size: 1.6rem;
+        padding: 2.4rem 0;
+    }
+
+    #recruit .accordion p{
+        padding: 2rem 0 4rem;
+    }
+
+    #recruit .accordion .interview{
+        flex-direction: column;
+        margin-top: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    #recruit .accordion .interview > div{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #recruit .accordion .interview > div > div{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #recruit .accordion .interview > div > div div{
+        font-size: 1.4rem;
+        padding: 1.2rem;
+        width: 60%;
+    }
+}

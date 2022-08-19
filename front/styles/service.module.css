@@ -1,0 +1,79 @@
+@media screen and (max-width: 767px){
+    #kv{
+        background: url('/service/kv_bg_sp.jpg') no-repeat center center/cover;
+    }
+
+    #service .wrap{
+        width: 85.33%;
+        padding: 2.4rem 1rem 0;
+        transform: translateY(-6.1rem);
+    }
+
+    #service .wrap h2{
+        font-size: 2.4rem;
+        width: 18rem;
+        padding-bottom: .9rem;
+        margin-bottom: .9rem;
+    }
+
+    #service .wrap > p{
+        font-size: 1.8rem;
+        text-align: center;
+        color: #2B519B;
+        margin-bottom: 3.6rem;
+    }
+
+    #service .wrap > div{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #service .wrap > div a{
+        width: 100%;
+        padding: 2.8rem 0;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    #service .wrap > div a::before{
+        border-right: 0.25rem solid white;
+        border-bottom: 0.25rem solid white;
+    }
+
+    /* details */
+    #service .content{
+        width: 85.33%;
+        flex-direction: column;
+    }
+
+    #service .content:nth-child(4),#service .content:nth-child(5){
+        padding-top: 4.3rem;
+    }
+
+    #service .content:nth-child(5){
+        margin-bottom: 5.4rem;
+    }
+
+    #service .content > div{
+        width: 100%;
+    }
+
+    #service .content > div:first-child{
+        height: 18rem;
+        padding: 2rem 2.5rem;
+        margin-bottom: 3.8rem;
+    }
+
+    #service .content > div:first-child img{
+        width: 4rem;
+    }
+
+    #service .content > div:first-child h3{
+        font-size: 2rem;
+        margin-top: .9rem;
+    }
+
+    #service .content > div:nth-child(2) p{
+        margin-bottom: 1.4rem;
+    }
+}

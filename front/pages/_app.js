@@ -3,9 +3,8 @@ import Head from 'next/head'
 import NextLink from 'next/link'
 import { Flex, Heading, Image, Link, Center, Box, Text, } from '@chakra-ui/react';
 
-import EntryButton from '../components/EntryButton';
-
 function MyApp({ Component, pageProps }) {
+
   return (
     <>
       <Head>
@@ -13,15 +12,15 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Flex as='header' justify='space-between' align='center' position='fixed' top='0' width='100%' height='10rem' zIndex={1000} background='white'>
-        <Heading as='h1' ms='3rem'>
+        <Heading as='h1' ml='2rem'>
           <NextLink href='/' passHref>
             <Link verticalAlign='text-top' transition='all .2s ease-in-out' _hover={{opacity: '.7', transition: 'all .3s ease-in-out' }}>
-              <Image src='/common/logo.svg' alt='ロゴ' width='28rem' />
+              <Image className='logo' src='/common/logo.svg' alt='ロゴ' width='28rem' />
             </Link>
           </NextLink>
         </Heading>
 
-        <Flex as='nav' justify='space-between' align='center' height='100%'>
+        <Flex as='nav' className='pc_flex' justify='space-between' align='center' height='100%'>
           <NextLink href='/' passHref>
             <Link fontSize='2rem' mr='6rem' transition='all .2s ease-in-out' 
               _hover={{opacity: '.6', transition: 'all .3s ease-in-out'}}>HOME</Link>
@@ -49,13 +48,47 @@ function MyApp({ Component, pageProps }) {
             </Link>
           </NextLink>
         </Flex>
+
+        <div id='hamburger' className='sp_only'>
+          <span id='line1' className='inner_line'></span>
+          <span id='line2' className='inner_line'></span>
+          <span id='line3' className='inner_line'></span>
+        </div>
+
+        <nav id='nav' className='sp_only'>
+          <div className='nav_wrap'>
+            <Image src='/common/logo.svg' alt='ロゴ' width='21.6rem' margin='0 auto 4.4rem' display='block'/>
+
+            <ul>
+              <li><NextLink href="/" passHref><a>HOME</a></NextLink></li>
+              <li><NextLink href="/recruit" passHref><a>採用情報</a></NextLink></li>
+              <li><NextLink href="/service" passHref><a>事業内容</a></NextLink></li>
+              <li><NextLink href="/company" passHref><a>会社情報</a></NextLink></li>
+              <li><NextLink href="/contact" passHref><a>お問い合わせ</a></NextLink></li>
+            </ul>
+          </div>
+
+          <div className='recruit'>
+            <p>JOIN US</p>
+
+            <p>
+              Nexsusoneでは、<br/>
+              新しいことに挑むことを恐れない心を持ち、<br/>
+              次のステップに進みたいメンバーを求めています。
+            </p>
+
+            <NextLink href='/contact' passHref>
+              <Link className='entry_button'>応募する</Link>
+            </NextLink>
+          </div>
+        </nav>
       </Flex>
 
       <Component {...pageProps} />
 
       <Box as='footer'>
-        <Flex borderBottom='.1rem solid #707070'>
-          <Flex flexDirection='column' w='37.5%' p='4.8rem 0' justify='center' align='center' background='url(/common/footer_bg.jpg) no-repeat center center/cover'>
+        <Flex className='wrap' borderBottom='.1rem solid #707070'>
+          <Flex className='left' flexDirection='column' w='37.5%' p='4.8rem 0' justify='center' align='center' background='url(/common/footer_bg.jpg) no-repeat center center/cover'>
             <Center as='p' width='28rem' color='white' p='.5rem 0' mb='4.8rem' background='#A9A9A9'>JOIN US!</Center>
             
             <Text textAlign='center' color='white' lineHeight={2} mb='5.6rem'>
@@ -63,11 +96,13 @@ function MyApp({ Component, pageProps }) {
               共に働けるメンバーを募集しています。
             </Text>
 
-            <EntryButton path='/contact' txt='エントリーはこちら'/>
+            <NextLink href='/recruit' passHref>
+              <Link className='entry_button'>エントリーはこちら</Link>
+            </NextLink>
           </Flex>
 
-          <Flex w='58%' pt='4.8rem' pl='3.2rem' justify='space-between' align='flex-start'>
-            <Box width='36%'>
+          <Flex className='right' w='58%' pt='4.8rem' pl='3.2rem' justify='space-between' align='flex-start'>
+            <Box className='recruit' width='36%'>
               <Center as='h3' w='28rem' color='white'fontSize='1.8rem' mb='4.8rem' p='.5rem' background='#A9A9A9'>最新求人</Center>
 
               <NextLink href='/recruit#recruit01' passHref>
@@ -92,11 +127,11 @@ function MyApp({ Component, pageProps }) {
               <NextLink href='/' passHref>
                 <Link transition='all .2s ease-in-out' 
                   _hover={{opacity: '.7', transition: 'all .3s ease-in-out' }}>
-                  <Image src='/common/logo.svg' alt='ロゴ' width='40rem'  mb='2.4rem'/>
+                  <Image className='logo' src='/common/logo.svg' alt='ロゴ' width='40rem'  mb='2.4rem'/>
                 </Link>
               </NextLink>
 
-              <Text as='p' lineHeight={2} mb='5.6rem'>
+              <Text lineHeight={2} mb='5.6rem'>
                 〒135-0064<br/>
                 東京都江東区青海-7-4 theSOHO1106号室
               </Text>
@@ -131,10 +166,25 @@ function MyApp({ Component, pageProps }) {
           </Flex>
         </Flex>
 
-        <Center padding='3.2rem 0' fontSize='1.6rem'>&copy; Copyright {getYear()} 株式会社Nexsusone</Center>
+        <Center className='copy' padding='3.2rem 0' fontSize='1.6rem'>&copy; Copyright {getYear()} 株式会社Nexsusone</Center>
       </Box>
     </>
   )
+}
+
+if (typeof window === 'object') {
+  function hamburger(){
+    document.getElementById('line1').classList.toggle('line_1');
+    document.getElementById('line2').classList.toggle('line_2');
+    document.getElementById('line3').classList.toggle('line_3');
+    document.getElementById('nav').classList.toggle('in');
+  };
+  document.getElementById('hamburger').addEventListener('click',function(){
+    hamburger();
+  });
+  document.getElementById('nav').addEventListener('click',function(){
+    hamburger();
+  });
 }
 
 export default MyApp;

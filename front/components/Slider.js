@@ -14,24 +14,33 @@ export default function Slider() {
         slidesToScroll: 1,
         pauseOnHover: false,
         cssEase: "linear",
+        responsive:[
+            {
+              breakpoint: 767,
+                settings: {
+                  slidesToShow: 1,
+                  speed: 10000,
+              }
+            },
+        ],
       };
       return (
-        <Box as='ul' className='slider' mb='-.5rem'>
+        <Box as='ul' className='slider' mb='-.5rem' h='35rem'>
             <Slick {...settings}>
                 <Box as='li' className='slide'>
-                    <Image src='/common/slide01.jpg' alt='スライダー１'/>
+                    <Image src='/common/slide01.jpg' alt='スライダー１' h='35rem'/>
                 </Box>
                 <Box as='li' className='slide'>
-                    <Image src='/common/slide02.jpg' alt='スライダー２'/>
+                    <Image src='/common/slide02.jpg' alt='スライダー２' h='35rem'/>
                 </Box>
                 <Box as='li' className='slide'>
-                    <Image src='/common/slide03.jpg' alt='スライダー３'/>
+                    <Image src='/common/slide03.jpg' alt='スライダー３' h='35rem'/>
                 </Box>
                 <Box as='li' className='slide'>
-                    <Image src='/common/slide04.jpg' alt='スライダー４'/>
+                    <Image src='/common/slide04.jpg' alt='スライダー４' h='35rem'/>
                 </Box>
                 <Box as='li' className='slide'>
-                    <Image src='/common/slide05.jpg' alt='スライダー５'/>
+                    <Image src='/common/slide05.jpg' alt='スライダー５' h='35rem'/>
                 </Box>
                 <Box as='li' className='slide'>
                     <Image src='/common/slide06.jpg' alt='スライダー６'/>

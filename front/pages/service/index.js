@@ -1,26 +1,26 @@
 import NextLink from 'next/link'
-import { Box, Heading, Flex, Text, Link, Image, Center, border } from "@chakra-ui/react";
+import { Box, Heading, Flex, Text, Link, Image, Center } from "@chakra-ui/react";
 
-import EntryButton from '../../components/EntryButton';
 import Slider from '../../components/Slider';
+import styles from '../../styles/service.module.css'
 
 export default function Service() {
     return (
         <main>
-            <Box as="section" h='56rem' position='relative' background='url(/service/kv_bg.jpg) no-repeat center center/cover'>
+            <Box as="section" id={styles.kv} className="kv" h='56rem' position='relative' background='url(/service/kv_bg.jpg) no-repeat center center/cover'>
                 <Heading className="hansans" color='white' fontSize='6.8rem' position='absolute' top='50%' left='24rem' transform='translate(0, -50%)'
                     _before={{position: 'absolute', content: '""', top: '50%', left: '50%', width: '36rem', height: '38rem', transform: 'translate(-50%, -40%)', blendMode: 'screen', zIndex: '-1',  background: 'url(/company/kv_txt.svg) no-repeat center center/contain'}}>
                     SERVICE
                 </Heading>
             </Box>
 
-            <Box as='section'>
-                <Center flexDirection='column' w='66.66%' m='auto' p='3.2rem 8.8rem 5.6rem' boxShadow=' 0 .3rem .6rem rgba(0,0,0,16%)' background='white' transform='translateY(-11.2rem)'>
+            <Box as='section' id={styles.service}>
+                <Center className={styles.wrap} flexDirection='column' w='66.66%' m='auto' p='3.2rem 8.8rem 5.6rem' boxShadow=' 0 .3rem .6rem rgba(0,0,0,16%)' background='white' transform='translateY(-11.2rem)'>
                     <Heading as='h2' className="hansans" color='#2B519B' fontSize='3.6rem' textAlign='center' w='36rem' pb='1.6rem' mb='4.8rem' borderBottom='solid .1rem #A9A9A9'>
                         事業内容
                     </Heading>
                     <Text mb='6.4rem'>
-                        私たちは、真摯に挑戦する人材を育て、貴社ビジネスの成功に貢献します。
+                        私たちは、<br className='sp_only'/>真摯に挑戦する人材を育て、<br className='sp_only'/>貴社ビジネスの成功に貢献します。
                     </Text>
 
                     <Flex w='100%' justify='space-between' align='stretch' mb='2.4rem'>
@@ -49,10 +49,12 @@ export default function Service() {
                         </NextLink>
                     </Flex>
 
-                    <Image src='/service/service_img.jpg' alt='事業内容' w='100%'/>
+                    <Image className='pc_only' src='/service/service_img.jpg' alt='事業内容' w='100%'/>
                 </Center>
 
-                <Flex id='service01' w='66.66%' m='-17.6rem auto 0' pt='17.6rem'>
+                <Image src='/service/service_img_sp.jpg' alt='事業内容' className='sp_only' m='-6rem auto 0' w='85.33%'/>
+
+                <Flex id='service01' className={styles.content} w='66.66%' m='-17.6rem auto 0' pt='17.6rem'>
                     <Center flexDirection='column' w='50%' h='34rem' background='url(/service/service01_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                         _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
                         <Image src='/service/service01.svg' alt='人材派遣・人材紹介' w='9rem'/>
@@ -64,17 +66,19 @@ export default function Service() {
                             20代を中心とした、成長したい意欲が高い<br/>
                             若手人員が多く在籍しております。<br/>
                             また、常に安定した人数を確保することが<br/>
-                            可能であることが、私たちの最大の強みとも言えます。<br/>
+                            可能であることが、<br className='sp_only'/>私たちの最大の強みとも言えます。<br/>
                             <br/>
-                            IT技術を要する専門職から営業代行まで幅広く対応でき、<br/>
-                            お客様の「人材不足解消」と更なる発展へのサポートが私たちの目的です。
+                            IT技術を要する専門職から<br className='sp_only'/>営業代行まで幅広く対応でき、<br/>
+                            お客様の「人材不足解消」と更なる発展への<br className='sp_only'/>サポートが私たちの目的です。
                         </Text>
 
-                        <EntryButton path='/contact' txt='お問い合わせ'/>
+                        <NextLink href='/contact' passHref>
+                            <Link className='entry_button'>お問い合わせ</Link>
+                        </NextLink>
                     </Center>
                 </Flex>
 
-                <Flex id='service02' w='66.66%' m='0 auto' pt='17.6rem' direction='row-reverse'>
+                <Flex id='service02' className={styles.content} w='66.66%' m='0 auto' pt='17.6rem' direction='row-reverse'>
                     <Center flexDirection='column' w='50%' h='34rem' background='url(/service/service02_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                         _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
                         <Image src='/service/service02.svg' alt='SES事業' w='8.8rem'/>
@@ -90,11 +94,13 @@ export default function Service() {
                             お客様が必要とする人材を判断し最適なご提案を致します。
                         </Text>
 
-                        <EntryButton path='/contact' txt='お問い合わせ'/>
+                        <NextLink href='/contact' passHref>
+                            <Link className='entry_button'>お問い合わせ</Link>
+                        </NextLink>
                     </Center>
                 </Flex>
 
-                <Flex id='service03' w='66.66%' m='0 auto 14.7rem' pt='17.6rem'>
+                <Flex id='service03' className={styles.content} w='66.66%' m='0 auto 14.7rem' pt='17.6rem'>
                     <Center flexDirection='column' w='50%' h='34rem' background='url(/service/service03_bg.jpg) no-repeat center center/cover' p='3.6rem 4.8rem' position='relative'
                         _before={{position: 'absolute', content: '""', w: 'calc(100% - 4.8rem)', h: 'calc(100% - 3.6rem)', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: 'solid .2rem white'}}>
                         <Image src='/service/service03.svg' alt='クリエイター育成' w='8.8rem'/>
@@ -111,7 +117,9 @@ export default function Service() {
                             クライアント様の未来も一緒に育てていきたいと考えております。
                         </Text>
 
-                        <EntryButton path='/contact' txt='お問い合わせ'/>
+                        <NextLink href='/contact' passHref>
+                            <Link className='entry_button'>お問い合わせ</Link>
+                        </NextLink>
                     </Center>
                 </Flex>
             </Box>

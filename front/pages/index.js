@@ -1,32 +1,34 @@
 import NextLink from 'next/link'
-import { Heading, Text, UnorderedList, ListItem, Box, Flex, Center,Link } from '@chakra-ui/react';
-
-import EntryButton from '../components/EntryButton';
+import { Heading, Text, Box, Flex, Center,Link } from '@chakra-ui/react';
 import Slider from '../components/Slider';
+
+import styles from '../styles/home.module.css'
 
 export default function Home() {
   return (
     <main>
-      <Box as='section' h='calc(100vh - 10rem)' position='relative'
+      <Box as='section' id={styles.mv} h='calc(100vh - 10rem)' position='relative'
         _before={{position: 'absolute', content: '""', width: '100%', height: '100%', top: 0, background: 'url(/top/mv_bg.jpg) no-repeat center center/cover'}}
         _after={{position: 'absolute', content: '""', width: '100%', height: '100%', top: 0, background: 'url(/top/mv_cover.png) no-repeat center center/cover'}}>
         <Box w='100%' h='100%' position='relative' zIndex={10}
          _before={{position: 'absolute', content: '""', width: '100%', height: '100%', top: 0, background: 'url(/top/mv_fromt.png) no-repeat center center/cover'}}>
-          <Box position='absolute' top='50%' right='15%' transform='translate(0, -40%)'>
+          <Box className={styles.txt} position='absolute' top='50%' right='15%' transform='translate(0, -40%)'>
             <Heading as='h2' fontSize='6.8rem' fontWeight='normal' fontFamily='a-otf-ud-reimin-pr6n, sans-serif' mb='7.2rem' position='relative'
             _before={{position: 'absolute', content: '""', width: '21rem', height: '.3rem', bottom: '20%', right: '4rem', transform: 'transelate(-100%, 50%)', background: 'linear-gradient(to left, #55E1FF, #2B519B)'}}>
-              可能性の未来へ、<br/>
+              可能性の未来へ、<br className='pc_only'/>
               突き進め
             </Heading>
             
-            <EntryButton path='/recruit' txt='採用情報を見る'/>
+            <NextLink href='/recruit' passHref>
+              <Link className='entry_button'>エントリーはこちら</Link>
+            </NextLink>
           </Box>
         </Box>
       </Box>
 
       {/* recruit */}
-      <Box as='section' pt='10.4rem' mb='8.8rem'>
-        <Flex w='75%' m=' 0 auto 8.8rem' justify='center' align='center'>
+      <Box as='section' id={styles.recruit} pt='10.4rem' mb='8.8rem'>
+        <Flex className={styles.wrap} w='75%' m=' 0 auto 8.8rem' justify='center' align='center'>
           <Box w='50%'>
             <Heading as='h3' textAlign='center' className='hansans' color='#2B519B' fontSize='3.6rem' mb='6.4rem'>
               １度切り開いた
@@ -56,7 +58,7 @@ export default function Home() {
               現在募集中の職種
             </Heading>
 
-            <Box>
+            <Box className={styles.jobList}>
               <NextLink href='/recruit#recruit01'  passHref>
                 <Link w='100%' h='15rem' mb='1.6rem' display='flex' justifyContent='flex-start' alignItems='stretch' boxShadow='0 .3rem .6rem rgba(0, 0, 0, 16%)'
                   _hover={{boxShadow: 'inset .3rem .3rem .6rem rgba(0, 0, 0, 30%)'}}>
@@ -97,12 +99,14 @@ export default function Home() {
         </Flex>
 
         <Center>
-          <EntryButton path='/contact' txt='エントリーはこちら'/>
+          <NextLink href='/recruit' passHref>
+            <Link className='entry_button'>エントリーはこちら</Link>
+          </NextLink>
         </Center>
       </Box>
 
       {/* about */}
-      <Box as='section' p='10.8rem 0 8.8rem' background='url(/top/about_bg.jpg) no-repeat center center/cover'>
+      <Box as='section' id={styles.about} p='10.8rem 0 8.8rem' background='url(/top/about_bg.jpg) no-repeat center center/cover'>
         <Box w='75%' m='auto'>
           <Heading as='h2' className='hansans' textAlign='center' color='white' fontSize='3.6rem' mb='8.8rem'>
             Nexsusoneについて
@@ -110,9 +114,9 @@ export default function Home() {
 
           <Text align='center' color='white' lineHeight={2.5} mb='9.6rem'>
             現在はWEBデザイナーや映像クリエイターなどの人材を育てクライアントへご紹介しています。<br/>
-            ゼロからスタートする未経験者でも、しっかり研修を受けスキルを身に付け、現在東京の現場で活躍されている人員が多く在籍しております。<br/>
+            ゼロからスタートする未経験者でも、<br className='sp_only'/>しっかり研修を受けスキルを身に付け、<br className='sp_only'/>現在東京の現場で活躍されている人員が多く在籍しております。<br/>
             <br/>
-            IT技術を要する専門職から営業代行まで幅広く対応できお客様の「人材不足解消」と更なる発展へのサポートを致します。
+            IT技術を要する専門職から<br className='sp_only'/>営業代行まで幅広く対応でき<br className='sp_only'/>お客様の「人材不足解消」と<br className='sp_only'/>更なる発展へのサポートを致します。
           </Text>
 
           <Flex justify='space-between' align='stretch'>

@@ -31,6 +31,8 @@ class MyDocument extends Document{
                     <meta name="twitter:title" content="" />
                     <meta name="twitter:image" content="" />
 
+                    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+
                     <script dangerouslySetInnerHTML={{ __html: `
                         (function(d) {
                             var config = {
