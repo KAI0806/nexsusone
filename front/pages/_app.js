@@ -8,14 +8,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>株式会社Nexsusone</title>
+        <title>株式会社Nexsusone｜公式ホームページ</title>
       </Head>
 
       <Flex as='header' justify='space-between' align='center' position='fixed' top='0' width='100%' height='10rem' zIndex={1000} background='white'>
-        <Heading as='h1' ml='2rem'>
+        <Heading as='h1' ml='2rem' className='logo'>
           <NextLink href='/' passHref>
             <Link verticalAlign='text-top' transition='all .2s ease-in-out' _hover={{opacity: '.7', transition: 'all .3s ease-in-out' }}>
-              <Image className='logo' src='/common/logo.svg' alt='ロゴ' width='28rem' />
+              <Image src='/common/logo.svg' alt='ロゴ' width='28rem' />
             </Link>
           </NextLink>
         </Heading>
@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }) {
 
         <nav id='nav' className='sp_only'>
           <div className='nav_wrap'>
-            <Image src='/common/logo.svg' alt='ロゴ' width='21.6rem' margin='0 auto 4.4rem' display='block'/>
+            <Image src='/common/logo.svg' alt='ロゴ' width='21.6rem' margin='0 auto 3.4rem' display='block'/>
 
             <ul>
               <li><NextLink href="/" passHref><a>HOME</a></NextLink></li>
@@ -69,7 +69,7 @@ function MyApp({ Component, pageProps }) {
           </div>
 
           <div className='recruit'>
-            <p>JOIN US</p>
+            <p>JOIN US！</p>
 
             <p>
               Nexsusoneでは、<br/>

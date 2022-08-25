@@ -61,7 +61,7 @@
     #service .content > div:first-child{
         height: 18rem;
         padding: 2rem 2.5rem;
-        margin-bottom: 3.8rem;
+        margin-bottom: 1.8rem;
     }
 
     #service .content > div:first-child img{
@@ -75,5 +75,7 @@
 
     #service .content > div:nth-child(2) p{
         margin-bottom: 1.4rem;
+        font-size: 1.3rem;
+        line-height: 2;
     }
 }

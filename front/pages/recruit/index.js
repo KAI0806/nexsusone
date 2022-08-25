@@ -108,7 +108,7 @@ export default function Recruit() {
                                         就業時間
                                     </Heading>
                                     <Text color='#243452' p='1.6rem 0 6.4rem'>
-                                        10：00～19：00 （所定労働時間8時間　休憩60分）
+                                        10：00～19：00 <br className='sp_only'/>（所定労働時間8時間　休憩60分）
                                     </Text>
                                 </Box>
 
@@ -303,8 +303,8 @@ export default function Recruit() {
                         </Center>
                         <Text fontSize='2.4rem' textAlign='center' mr='1rem'>
                             ゼロから映像制作・CG制作にチャレンジ！<br/>
-                            未経験者でも、<br/>
-                            しっかりとした研修でスキルを身に付けられます。<br/>
+                            未経験者でも、<br className='pc_only'/>
+                            しっかりとした研修で<br className='sp_only'/>スキルを身に付けられます。<br/><br className='sp_only'/>
                             IT業界に興味がある方、<br/>
                             映像制作の仕事がしたい方大歓迎です！
                         </Text>
@@ -344,7 +344,7 @@ export default function Recruit() {
                                         就業時間
                                     </Heading>
                                     <Text color='#243452' p='1.6rem 0 6.4rem'>
-                                        10：00～19：00 （所定労働時間8時間　休憩60分）
+                                        10：00～19：00 <br className='sp_only'/>（所定労働時間8時間　休憩60分）
                                     </Text>
                                 </Box>
 

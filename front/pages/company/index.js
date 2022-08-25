@@ -35,10 +35,10 @@ export default function Company() {
                                 <br/>
                                 私自身、<br className="sp_only"/>経営者として成長過程にいる中で、<br/>
                                 毎日が挑戦と試行錯誤の連続です。<br/>
-                                <br/>
+                                <br className="pc_only"/>
                                 Nexsusoneも成長段階にいる会社で<br className="sp_only"/>本気で<br className="pc_only"/>
                                 「次のステップへ架け橋となる会社」<br className="sp_only"/>として<br className="pc_only"/>
-                                走り続けている会社になります。<br/>
+                                走り続けている会社になります。<br/><br className="sp_only"/>
                                 だからこそ皆で創り上げ、<br className="sp_only"/>盛り上げていきたいと思っております。<br/>
                                 私たちが目指す姿や、 成し遂げようと<br className="sp_only"/>していることを全員で共有し、<br/>
                                 その実現に向けて協力していきます。
@@ -72,7 +72,7 @@ export default function Company() {
                                     代表取締役
                                 </Heading>
                                 <Text color='white'>
-                                    佐々木 考
+                                    佐々木 孝
                                 </Text>
                             </Box>
 
@@ -115,7 +115,7 @@ export default function Company() {
                                 </Heading>
                                 <Text color='white'>
                                     〒135-0064<br/>
-                                    東京都江東区青海2-7-4 theSOHO 1106号室
+                                    東京都江東区青海2-7-4 <br className="sp_only"/>theSOHO 1106号室
                                 </Text>
                             </Box>
                         </Box>
@@ -124,11 +124,11 @@ export default function Company() {
             </Box>
 
             <AspectRatio className="pc_only" ratio={16/4}>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12974.437555675633!2d139.77451488478488!3d35.6127007833635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889ffadd0e6fd%3A0x438e0175fbcc3e2d!2sthe%20SOHO%20Odaiba!5e0!3m2!1sja!2sjp!4v1660907558163!5m2!1sja!2sjp" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12974.437555675633!2d139.77451488478488!3d35.6127007833635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889ffadd0e6fd%3A0x438e0175fbcc3e2d!2sthe%20SOHO%20Odaiba!5e0!3m2!1sja!2sjp!4v1660907558163!5m2!1sja!2sjp" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
             </AspectRatio>
 
             <AspectRatio className="sp_only" ratio={16/9}>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12974.437555675633!2d139.77451488478488!3d35.6127007833635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889ffadd0e6fd%3A0x438e0175fbcc3e2d!2sthe%20SOHO%20Odaiba!5e0!3m2!1sja!2sjp!4v1660907558163!5m2!1sja!2sjp" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12974.437555675633!2d139.77451488478488!3d35.6127007833635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889ffadd0e6fd%3A0x438e0175fbcc3e2d!2sthe%20SOHO%20Odaiba!5e0!3m2!1sja!2sjp!4v1660907558163!5m2!1sja!2sjp" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
             </AspectRatio>
         </main>
     );

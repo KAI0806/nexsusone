@@ -178,6 +178,10 @@ button:hover{
   opacity: .7;
 }
 
+.slick-slide .sp_only{
+  display: none;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -219,14 +223,14 @@ button:hover{
 
   .entry_button{
     font-size: 1.6rem;
-    letter-spacing: .25rem;
+    letter-spacing: .1rem;
     width: 21.6rem;
     padding: 1.2rem 0;
     border-radius: 5rem;
   }
   
   .entry_button::before{
-    right: 2rem;
+    right: 1.75rem;
     width: .7rem;
     height: .7rem;
     border-bottom: .25rem solid white;
@@ -241,8 +245,14 @@ button:hover{
     height: 5.6rem !important;
   }
 
-  header .logo{
+  header .logo a{
+    display: block;
+    height: 3.5rem;
+  }
+
+  header .logo a img{
     width: 14.4rem;
+    height: 3.5rem;
   }
 
   #hamburger {
@@ -326,7 +336,7 @@ button:hover{
 
   #nav .nav_wrap{
     height: 65%;
-    padding-top: 3.2rem;
+    padding-top: 1.2rem;
     width: 85.33%;
   }
 
@@ -337,11 +347,16 @@ button:hover{
   #nav .nav_wrap ul li{
     font-size: 2rem;
     margin-bottom: 4.8rem;
+    line-height: 1;
+  }
+
+  #nav .nav_wrap ul li:last-child{
+    margin-bottom: 0;
   }
 
   #nav .recruit{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -358,12 +373,13 @@ button:hover{
     background: #A9A9A9;
     width: 19rem;
     padding: .4rem;
-    margin-bottom: 3.7rem;
+    font-size: 1.2rem;
+    letter-spacing: .25rem;
   }
 
-  #nav .recruit p:nth-child(2){
+  /* #nav .recruit p:nth-child(2){
     margin-bottom: 2.8rem;
-  }
+  } */
 
   main{
     margin-top: 5.6rem;
@@ -388,6 +404,10 @@ button:hover{
     font-size: 1.4rem;
     margin: 2.4rem 0;
     padding: 1rem 1.5rem;
+  }
+
+  .slick-slide img{
+    height: 20rem !important;
   }
   
   .select_wrap{
@@ -418,6 +438,10 @@ button:hover{
     width: 22.5rem;
     padding: .9rem 0;
     font-size: 1.4rem;
+  }
+
+  .slick-slide img{
+    height: 35rem !important;
   }
 
   /* footer */
@@ -483,5 +507,9 @@ button:hover{
   .copy{
     font-size: 1.2rem !important;
     padding: 2.2rem;
+  }
+
+  .slick-slide .sp_only{
+    display: block;
   }
 }

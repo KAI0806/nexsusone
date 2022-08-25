@@ -13,7 +13,7 @@ export default function Home() {
         <Box w='100%' h='100%' position='relative' zIndex={10}
          _before={{position: 'absolute', content: '""', width: '100%', height: '100%', top: 0, background: 'url(/top/mv_fromt.png) no-repeat center center/cover'}}>
           <Box className={styles.txt} position='absolute' top='50%' right='15%' transform='translate(0, -40%)'>
-            <Heading as='h2' fontSize='6.8rem' fontWeight='normal' fontFamily='a-otf-ud-reimin-pr6n, sans-serif' mb='7.2rem' position='relative'
+            <Heading as='h2' fontSize='6.8rem' fontWeight='normal' fontFamily='a-otf-ud-reimin-pr6n,serif' mb='7.2rem' position='relative'
             _before={{position: 'absolute', content: '""', width: '21rem', height: '.3rem', bottom: '20%', right: '4rem', transform: 'transelate(-100%, 50%)', background: 'linear-gradient(to left, #55E1FF, #2B519B)'}}>
               可能性の未来へ、<br className='pc_only'/>
               突き進め
@@ -114,7 +114,7 @@ export default function Home() {
 
           <Text align='center' color='white' lineHeight={2.5} mb='9.6rem'>
             現在はWEBデザイナーや映像クリエイターなどの人材を育てクライアントへご紹介しています。<br/>
-            ゼロからスタートする未経験者でも、<br className='sp_only'/>しっかり研修を受けスキルを身に付け、<br className='sp_only'/>現在東京の現場で活躍されている人員が多く在籍しております。<br/>
+            ゼロからスタートする未経験者でも、<br className='sp_only'/>しっかり研修を受けスキルを身に付け、<br className='sp_only'/>現在東京の現場で活躍されている<br className='sp_only'/>人員が多く在籍しております。<br/>
             <br/>
             IT技術を要する専門職から<br className='sp_only'/>営業代行まで幅広く対応でき<br className='sp_only'/>お客様の「人材不足解消」と<br className='sp_only'/>更なる発展へのサポートを致します。
           </Text>

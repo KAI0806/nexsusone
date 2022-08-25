@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px){
     #mv{
-        height: calc(100vh - 5.6rem);
+        height: calc(100vh - 12.6rem);
         overflow-x: hidden;
     }
 
@@ -19,7 +19,7 @@
     #mv .txt{
         width: 85.33%;
         right: unset;
-        top: 505;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -31,8 +31,9 @@
         font-size: 2rem;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
-        letter-spacing: 2rem;
+        letter-spacing: 1.5rem;
         margin-left: 25rem;
+        margin-bottom: 3vh;
     }
 
     #mv h2::before{

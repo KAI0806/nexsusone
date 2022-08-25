@@ -89,9 +89,9 @@ export default function Service() {
                         <Text align='center' mb='4.8rem'>
                             システムエンジニアリングサービス（SES）は<br/>
                             技術力を求めている企業に向けて、<br/>
-                            弊社でゼロから育成したプロ人員をアテンドしていきます。<br/>
+                            弊社でゼロから育成したプロ人員を<br className='sp_only'/>アテンドしていきます。<br/>
                             <br/>
-                            お客様が必要とする人材を判断し最適なご提案を致します。
+                            お客様が必要とする人材を判断し<br className='sp_only'/>最適なご提案を致します。
                         </Text>
 
                         <NextLink href='/contact' passHref>
@@ -109,12 +109,12 @@ export default function Service() {
 
                     <Center w='50%' flexDirection='column'>
                         <Text align='center' mb='4.8rem'>
-                            弊社では、未来ある20代若手人員のクリエイター育成に力を入れています。<br/>
+                            弊社では、未来ある20代若手人員の<br className='sp_only'/>クリエイター育成に力を入れています。<br/>
                             実際の現場に近い実技課題を通して未経験からでも<br/>
                             市場で通用するプロを創出しています。<br/>
                             <br/>
                             制作業界の20代若手が少ない市場課題に対して<br/>
-                            クライアント様の未来も一緒に育てていきたいと考えております。
+                            クライアント様の未来も一緒に育てていきたいと<br className='sp_only'/>考えております。
                         </Text>
 
                         <NextLink href='/contact' passHref>
